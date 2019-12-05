@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5cacfd260e854616819872dc287f3ef0" Name="Diagram1" >
+        <EntityTypeShape EntityType="Model1.Empleado" Width="1.5" PointX="2" PointY="0.875" />
+        <EntityTypeShape EntityType="Model1.Vacaciones" Width="1.5" PointX="4" PointY="4" />
+        <EntityTypeShape EntityType="Model1.Departamento" Width="1.5" PointX="4.375" PointY="0.875" />
+        <EntityTypeShape EntityType="Model1.Cargos" Width="1.5" PointX="6.625" PointY="0.75" />
+        <EntityTypeShape EntityType="Model1.Nomina" Width="1.5" PointX="5.75" PointY="2.375" />
+        <EntityTypeShape EntityType="Model1.SalidasEmpleado" Width="1.5" PointX="7.875" PointY="2.5" />
+        <EntityTypeShape EntityType="Model1.Permisos" Width="1.5" PointX="1.125" PointY="4.625" />
+        <EntityTypeShape EntityType="Model1.Licencias" Width="1.5" PointX="3" PointY="6.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

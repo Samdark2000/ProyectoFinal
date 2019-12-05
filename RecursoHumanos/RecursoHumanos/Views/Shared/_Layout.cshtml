@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Recursos Humanos", "Login", "Account", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                    Modulo de Mantenimiento
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">@Html.ActionLink("Empleado", "Index", "Empleados")</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">@Html.ActionLink("Departamento", "Index", "Departamentos")</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">@Html.ActionLink("Cargos", "Index", "Cargos")</a>
+                </div>
+
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                   Modulo de Proceso
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">@Html.ActionLink("Nominas", "Index", "Nominas")</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">@Html.ActionLink("Permisos", "Index", "Permisos")</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">@Html.ActionLink("SalidasEmpleados", "Index", "SalidasEmpleados")</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">@Html.ActionLink("Licencias", "Index", "Licencias")</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">@Html.ActionLink("Vacaciones", "Index", "Vacaciones")</a>
+                </div>
+
+            </li>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
